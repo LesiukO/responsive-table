@@ -1,1 +1,126 @@
+// @import 'myreset'
+
+// body
+// 	font-family: sans-serif
+// .table
+// 	display: flex
+// 	max-width: 1000px
+// 	margin: 100px auto
+// .rows
+// 	width: 50%
+// 	border-bottom: 1px solid #000
+// 	border-left: 1px solid #000
+// .row
+// 	display: flex
+// 	justify-content: space-between
+// 	flex-wrap: wrap
+// 	padding: 0 10px
+// 	border-top: 1px solid #000
+// 	&_active
+// 		background-color: #e5e6bb
+// 		position: relative
+// 		&:after
+// 			display: inline-block
+// 			content: ''
+// 			position: absolute
+// 			border: 15px solid transparent
+// 			border-left-color: #006d18
+// 			border-right: 0
+// 			right: -15px
+// 			top: 50%
+// 			transform: translateY(-50%)
+// 			z-index: 2
+// .name
+// 	width: 100%
+// 	min-height: 40px
+// 	&__text
+// 		border-bottom: 1px solid #000
+// .phone, .email
+// 	font-style: italic
+// .info-block
+// 	width: 50%
+// 	background-color: #e5e6bb
+// 	border: 1px solid #000
+// 	padding: 0 20px
+// 	position: relative
+// 	&__button-close
+// 		position: absolute
+// 		top: 5px
+// 		right: 5px
+// .button-close
+// 	width: 30px
+// 	height: 30px
+// 	&__line
+// 		display: inline-block
+// 		width: 30px
+// 		height: 2px
+// 		background-color: #000
+// 		position: absolute
+// 		top: 50%
+// 		transform: translateY(-50%) rotate(45deg)
+// 		&:nth-child(2)
+// 			transform: translateY(-50%) rotate(-45deg)
+// ---------------------------//
+
 @import 'myreset'
+
+body
+	font-family: sans-serif
+.table
+	display: flex
+	max-width: 1000px
+	margin: 100px auto
+.rows
+	width: 50%
+	border-bottom: 1px solid #000
+	border-left: 1px solid #000
+.row
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	padding: 0 10px
+	border-top: 1px solid #000
+	&_active
+		background-color: #e5e6bb
+		position: relative
+		&:after
+			display: inline-block
+			content: ''
+			position: absolute
+			border: 15px solid transparent
+			border-left-color: #006d18
+			border-right: 0
+			right: -15px
+			top: 50%
+			transform: translateY(-50%)
+			z-index: 2
+.name
+	width: 100%
+	min-height: 40px
+	&__text
+		border-bottom: 1px solid #000
+.phone, .email
+	font-style: italic
+.info-block
+	width: 50%
+	background-color: #e5e6bb
+	border: 1px solid #000
+	padding: 0 20px
+	position: relative
+	&__button-close
+		position: absolute
+		top: 5px
+		right: 5px
+.button-close
+	width: 30px
+	height: 30px
+	&__line
+		display: inline-block
+		width: 30px
+		height: 2px
+		background-color: #000
+		position: absolute
+		top: 50%
+		transform: translateY(-50%) rotate(45deg)
+		&:nth-child(2)
+			transform: translateY(-50%) rotate(-45deg)

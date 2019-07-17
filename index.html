@@ -15,31 +15,52 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="table">
+	<div class="table table_active3">
 		<div class="rows">
-			<div class="row">
+			<div class="title-row">
+				<div class="name"><span class="name__text">ФИО</span></div>
+				<div class="phone">Телефон</div>
+				<div class="email">Email</div>
+				<div class="skype">Skype</div>
+				<div class="comment">Коментарий</div>
+			</div>
+			<div class="row" id="row1">
 				<div class="name"><span class="name__text">Смородина Алена Александровна</span></div>
 				<div class="phone">0506123123</div>
 				<div class="email">alenasmorodina@gmail.com</div>
+				<div class="skype">alenasmorodina</div>
+				<div class="comment">Встреча завтра на 11:00</div>
 			</div>
-			<div class="row row_active">
+			<div class="row" id="row2">
 				<div class="name"><span class="name__text">Миланов Алексей Игоревич</span></div>
 				<div class="phone">0506123123</div>
 				<div class="email">milanovalex@ua.fm</div>
+				<div class="skype">Milanovalex</div>
+				<div class="comment">Созвониться в пятницу 05.07.2019.</div>
 			</div>
-			<div class="row">
+			<div class="row" id="row3">
 				<div class="name"><span class="name__text">Зайченко Валентина Александровна</span></div>
 				<div class="phone">0966671290</div>
 				<div class="email">zay4enkovalya@mail.ru</div>
+				<div class="skype">azay4enkovalya</div>
+				<div class="comment">Очень занят в ближайшие 2 недели. 10.05.2019.</div>
 			</div>
 		</div>
 		<div class="info-block">
-			<p>Добавлен: 21.05.2018</p>
-			<p>Возвраст: 23</p>
-			<p>Семейное положение: холост</p>
-			<p>Работает: Фора, касир.</p>
-			<p>Образование: высшее, НТУУ КПИ.</p>
-			<p>Финансы и кредит.</p>
+			<div class="info-block__inner">
+				<p>Добавлен: <span class="date"></span></p>
+				<p>Возвраст: <span class="age"></span></p>
+				<p>Семейное положение: <span class="status"></span></p>
+				<p>Работает: <span class="job"></span></p>
+				<p>Образование: <span class="education"></span></p>
+				<p><span class="faculty"></span></p>
+<!-- 				<p>Добавлен: 21.05.2018</p>
+				<p>Возвраст: 23</p>
+				<p>Семейное положение: холост</p>
+				<p>Работает: Фора, касир.</p>
+				<p>Образование: высшее, НТУУ КПИ.</p>
+				<p>Финансы и кредит.</p> -->
+			</div>
 			<a href="#" class="info-block__button-close button-close">
 				<span class="button-close__line"></span>
 				<span class="button-close__line"></span>

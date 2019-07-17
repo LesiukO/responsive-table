@@ -23,21 +23,39 @@ body {
 .table {
   display: flex;
   max-width: 1000px;
-  margin: 100px auto;
+  margin: 50px auto;
 }
 
 .rows {
-  width: 50%;
+  width: 100%;
   border-bottom: 1px solid #000;
   border-left: 1px solid #000;
+}
+
+.title-row {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 1px solid #000;
+}
+
+.title-row .name,
+.title-row .phone,
+.title-row .email,
+.title-row .skype,
+.title-row .comment {
+  padding: 10px;
+  vertical-align: middle;
+  font-style: normal;
 }
 
 .row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 10px;
   border-top: 1px solid #000;
+  cursor: pointer;
 }
 .row_active {
   background-color: #e5e6bb;
@@ -57,18 +75,38 @@ body {
 }
 
 .name {
-  width: 100%;
+  width: 15%;
   min-height: 40px;
 }
-.name__text {
-  border-bottom: 1px solid #000;
+
+.phone {
+  width: 15%;
+}
+
+.email {
+  width: 30%;
 }
 
 .phone, .email {
   font-style: italic;
 }
 
+.skype, .comment {
+  display: block;
+  width: 20%;
+}
+
+.name,
+.phone,
+.email,
+.skype,
+.comment {
+  border-right: 1px solid #000;
+  padding: 0 10px;
+}
+
 .info-block {
+  display: none;
   width: 50%;
   background-color: #e5e6bb;
   border: 1px solid #000;
@@ -96,6 +134,45 @@ body {
 }
 .button-close__line:nth-child(2) {
   transform: translateY(-50%) rotate(-45deg);
+}
+
+.table.table_active .info-block {
+  display: block;
+}
+
+.table.table_active .rows {
+  width: 50%;
+}
+
+.table.table_active .name {
+  width: 100%;
+}
+.table.table_active .name__text {
+  border-bottom: 1px solid #000;
+}
+
+.table.table_active .phone, .table.table_active .email {
+  width: 50%;
+}
+
+.table.table_active .email {
+  text-align: right;
+}
+
+.table.table_active .skype, .table.table_active .comment {
+  display: none;
+}
+
+.table.table_active .name,
+.table.table_active .phone,
+.table.table_active .email,
+.table.table_active .skype,
+.table.table_active .comment {
+  border-right: none;
+}
+
+.table.table_active .title-row {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,6 +2,12 @@ window.onload = function () {
 	let table 			= document.querySelector('.table');
 	let rows 			= document.querySelectorAll('.row');
 	let buttonClose 	= document.querySelector('.button-close');
+	let date 			= document.querySelector('.date');
+	let age 			= document.querySelector('.age');
+	let status 			= document.querySelector('.status');
+	let job 			= document.querySelector('.job');
+	let education 		= document.querySelector('.education');
+	let faculty 		= document.querySelector('.faculty');
 
 	let users = {
 		'user1': {
@@ -37,12 +43,6 @@ window.onload = function () {
 				row.classList.remove("row_active");
 			}
 			row.classList.add("row_active");
-			let date 			= document.querySelector('.date');
-			let age 			= document.querySelector('.age');
-			let status 			= document.querySelector('.status');
-			let job 			= document.querySelector('.job');
-			let education 		= document.querySelector('.education');
-			let faculty 		= document.querySelector('.faculty');
 			let userId 			= row.getAttribute('id')
 			date.innerText 		= users[userId].date;
 			age.innerText 		= users[userId].age;
